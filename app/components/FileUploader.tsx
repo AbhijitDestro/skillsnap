@@ -41,8 +41,9 @@ const FileUploader = ({onFileSelect}:FileUploaderProps) => {
                     <p className='text-sm font-medium text-gray-500'>{formatSize(file.size)}</p>
                   </div>
                 </div>
-                <button className='p-2 cursor-pointer' onClick={()=>{setFile(null);
-                onFileSelect?.(null)}}>
+                <button className='p-2 cursor-pointer' 
+                   onClick={()=>{setFile(null);
+                   onFileSelect?.(null)}}>
                   <img src="/icons/cross.svg" className='w-4 h-4' alt="remove" />
                 </button>
               </div>
